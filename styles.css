@@ -1,0 +1,106 @@
+@font-face {
+  font-family: "Inter";
+  src: url("assets/fonts/static/Inter-Regular.ttf") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("assets/fonts/static/Inter-SemiBold.ttf") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("assets/fonts/static/Inter-Bold.ttf") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --bg-color: #141414;
+  --surface: #1f1f1f;
+  --accent: #8dad36;
+  --button-color: #333333;
+  --text-primary: #dbdbdb;
+  --text-secondary: #999999;
+  font-size: 12px;
+}
+body {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-color);
+}
+.main {
+  background-color: var(--surface);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  padding: 1.5em;
+  gap: 1em;
+  min-width: 20%;
+}
+.main__profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+}
+.main__avatar {
+  max-width: 64px;
+  border-radius: 100%;
+}
+.main__name {
+    font-size: 1.7em;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: var(--text-primary);
+    margin: 0;
+}
+.main__address {
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: var(--accent);
+    margin: 0;
+    padding-bottom: 0.5em;
+}
+.main__title {
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: var(--text-secondary);
+    margin: 0;
+}
+.main__sl {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: .8em;
+}
+.main__button {
+    background-color: var(--button-color);
+    padding:0.5em;
+    width: 100%;
+    border-radius: 4px;
+    border: none;
+}
+.main__link {
+    color: var(--text-primary);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1em;
+}
+.attribution {
+    color: var(--text-primary);
+}
