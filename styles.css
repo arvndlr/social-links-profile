@@ -19,6 +19,43 @@
   font-style: normal;
 }
 
+/* || RESET */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img,
+picture,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border-color: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
 :root {
   --bg-color: #141414;
   --surface: #1f1f1f;
@@ -26,7 +63,8 @@
   --button-color: #333333;
   --text-primary: #dbdbdb;
   --text-secondary: #999999;
-  font-size: 12px;
+  font-size: 1rem;
+  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
 }
 body {
   font-family: "Inter", sans-serif;
@@ -43,7 +81,7 @@ body {
   flex-direction: column;
   align-items: center;
   border-radius: 10px;
-  padding: 1.5em;
+  padding: 2em;
   gap: 1em;
   min-width: 20%;
 }
@@ -58,49 +96,55 @@ body {
   border-radius: 100%;
 }
 .main__name {
-    font-size: 1.7em;
-    font-weight: 700;
-    line-height: 100%;
-    letter-spacing: 0px;
-    color: var(--text-primary);
-    margin: 0;
+  font-size: 1.7em;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: var(--text-primary);
+  margin: 0;
 }
 .main__address {
-    font-size: 1em;
-    font-weight: 700;
-    line-height: 100%;
-    letter-spacing: 0px;
-    color: var(--accent);
-    margin: 0;
-    padding-bottom: 0.5em;
+  font-size: 1em;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: var(--accent);
+  margin: 0;
+  padding-bottom: 0.5em;
 }
 .main__title {
-    font-size: 1em;
-    font-weight: 400;
-    line-height: 100%;
-    letter-spacing: 0px;
-    color: var(--text-secondary);
-    margin: 0;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: var(--text-secondary);
+  margin: 0;
 }
 .main__sl {
   display: flex;
   flex-direction: column;
   width: 100%;
-  gap: .8em;
+  gap: 0.8em;
 }
 .main__button {
-    background-color: var(--button-color);
-    padding:0.5em;
-    width: 100%;
-    border-radius: 4px;
-    border: none;
+  background-color: var(--button-color);
+  padding: 0.5em;
+  width: 100%;
+  border-radius: 4px;
+  border: none;
 }
 .main__link {
-    color: var(--text-primary);
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1em;
+  color: var(--text-primary);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1em;
 }
 .attribution {
-    color: var(--text-primary);
+  color: var(--text-primary);
+}
+.attribution__fm-link {
+    color: #1f25dd;
+}
+.attribution__author-link {
+    color: #b71fdd;
 }
